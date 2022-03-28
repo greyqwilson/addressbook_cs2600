@@ -7,7 +7,7 @@
 #include <ctype.h>
 #include <stdbool.h>
 
-#include "address_book.h"
+#include "../include/address_book.h"
 
 Status load_file(AddressBook *address_book)
 {
