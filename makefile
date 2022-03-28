@@ -4,11 +4,11 @@ DEBUGFLAGS=-g
 
 all: addressbook
 
-addressbook: address_book_fops.c address_book_fops.h address_book_menu.c address_book_menu.h address_book.h main.c
-	$(CC) address_book_fops.c address_book_fops.h address_book_menu.c address_book_menu.h address_book.h main.c -o addressbook
+addressbook: src\\address_book_menu.c src\\address_book_fops.c  src\\main.c
+	$(CC) src\\address_book_menu.c src\\address_book_fops.c  src\\main.c -o bin\\addressbook
 
 debug:
-	$(CC) $(DEBUGFLAGS) address_book_fops.c address_book_fops.h address_book_menu.c address_book_menu.h address_book.h main.c -o d_addressbook
+	$(CC) $(DEBUGFLAGS) src\\address_book_menu.c src\\address_book_fops.c  src\\main.c -o bin\\addressbook
 
 clean:
-	del address_book_fops.h.gch address_book_menu.h.gch address_book.h.gch addressbook.exe d_addressbook.exe
+	del bin\\addressbook.exe
