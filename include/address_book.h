@@ -3,6 +3,7 @@
 
 #include <stdio.h>
 
+
 #define DEFAULT_FILE				"address_book.csv"
 
 /* Length of a contact name  */
@@ -29,6 +30,7 @@
 typedef int bool_t;
 
 typedef enum 
+
 {
 	e_add,
 	e_search,
@@ -37,7 +39,9 @@ typedef enum
 	e_list,
 } Modes;
 
+
 typedef enum
+
 
 {
 	e_first_opt,
@@ -57,7 +61,9 @@ typedef enum
 	e_back,
 
 
+
 	e_success = 0, // Changed it to = 0 to be useful
+
 
 	e_no_match,
 	e_new_line,
@@ -65,7 +71,9 @@ typedef enum
 
 
 
+
 typedef enum
+
 
 {
 	e_exit,
@@ -80,12 +88,14 @@ typedef enum
 typedef struct
 {
 
+
 	
 	char name[NAME_COUNT][NAME_LEN];					// Size of name array: 1*32
 	char phone_numbers[PHONE_NUMBER_COUNT][NUMBER_LEN]; // size is 5*32
 	char email_addresses[EMAIL_ID_COUNT][EMAIL_ID_LEN]; // size is 5*32
 
 	int si_no;
+
 } ContactInfo;
 
 typedef struct
@@ -93,8 +103,10 @@ typedef struct
 	FILE *fp;
 	ContactInfo *list;
 
+
 	
 	int count;
+
 
 } AddressBook;
 
