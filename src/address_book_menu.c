@@ -280,14 +280,12 @@ Status menu(AddressBook *address_book)
 	} while (option != e_exit);
 
 	fflush(stdout);
-
 	return e_success;
 }
 
 Status add_contacts(AddressBook *address_book)
 {
 	// /* Add the functionality for adding contacts here */
-
 }
 
 Status search(const char *str, AddressBook *address_book, int loop_count, int field, const char *msg, Modes mode)
