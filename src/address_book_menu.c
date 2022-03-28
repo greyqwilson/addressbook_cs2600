@@ -5,10 +5,10 @@
 #include <ctype.h>
 #include <stdbool.h>
 
-#include "address_book_fops.h"
+#include "../include/address_book_fops.h"
 //#include "abk_log.h"
-#include "address_book_menu.h"
-#include "address_book.h"
+#include "../include/address_book_menu.h"
+#include "../include/address_book.h"
 
 void contact_confirmation(int target, char *msg, AddressBook *address_book)
 {
